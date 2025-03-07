@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Submission Success</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .success-container {
+            max-width: 350px;
+        }
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid green;
+        }
+        .success-icon {
+            position: relative;
+            display: inline-block;
+        }
+        .success-icon::before {
+            content: '\2713';
+            font-size: 20px;
+            color: white;
+            background-color: green;
+            border-radius: 50%;
+            padding: 3px 7px;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        .celebration {
+            position: relative;
+        }
+        .celebration::after {
+            content: "";
+            background-image: url('https://cdn-icons-png.flaticon.com/512/929/929422.png'); /* Confetti image */
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .btn-home {
+            width: 100%;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        .success-text {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+        .success-text span {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="success-container">
+    <div class="celebration">
+        <div class="success-icon">
+            <img src="https://via.placeholder.com/80" alt="User" class="profile-pic">
+        </div>
+    </div>
+    <p class="success-text">Submitted Successfully, <br> Go back to <span>Home</span></p>
+    <a href="profile.html">
+    <button class="btn btn-home">Home</button>
+</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

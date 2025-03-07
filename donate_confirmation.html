@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .profile-container {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile-picture {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .profile-number {
+            font-size: 14px;
+            color: gray;
+        }
+        .confirmation-container {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .amount-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #004d00;
+        }
+        .paid-text {
+            color: #008000;
+            font-weight: bold;
+        }
+        .transaction-id {
+            color: #4caf50;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .done-btn {
+            width: 100%;
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .done-btn:active {
+            background-color: #388e3c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="profile-picture">
+        <img src="https://via.placeholder.com/50" alt="Profile">
+    </div>
+    <div>
+        <div class="profile-name">Mishkat Alvi</div>
+        <div class="profile-number">01798XXXXXX</div>
+    </div>
+</div>
+
+<div class="confirmation-container">
+    <p>December 16, 2024</p>
+    <hr>
+    <p>Amount <span class="amount-text">10,000Tk</span> <span class="paid-text">Paid ✔</span></p>
+    <p>Donated by Bkash</p>
+    <p>Transaction ID: <span class="transaction-id">XyzA53E</span></p>
+</div>
+<a href="profile.html">
+<button class="done-btn">Done</button>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
